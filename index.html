@@ -8,23 +8,32 @@
 
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1a30;
-      --card2:#0c162b;
-      --text:#eaf0ff;
-      --muted:#a8b3d6;
-      --accent:#7c5cff;
-      --accent2:#2de2e6;
-      --ok:#2dd4bf;
-      --warn:#fbbf24;
-      --danger:#fb7185;
-      --border:rgba(255,255,255,.10);
-      --shadow: 0 16px 40px rgba(0,0,0,.35);
-      --radius:18px;
-      --max: 1120px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
+  /* BACKGROUNDS */
+  --bg:#050505;          /* noir principal */
+  --card:#0b0b0b;        /* cartes */
+  --card2:#0f0f0f;
+
+  /* TEXTES */
+  --text:#f5f5f5;        /* texte principal */
+  --muted:#9a9a9a;       /* texte secondaire */
+
+  /* ACCENTS (minimal, luxe) */
+  --accent:#111111;      /* boutons secondaires */
+  --accent2:#1f1f1f;     /* survol / highlights */
+
+  /* ETATS */
+  --ok:#22c55e;
+  --warn:#f59e0b;
+  --danger:#ef4444;
+
+  /* UI */
+  --border:rgba(255,255,255,.08);
+  --shadow:0 18px 45px rgba(0,0,0,.7);
+
+  --radius:18px;
+  --max:1120px;
+}
+
     *{box-sizing:border-box}
     body{
       margin:0;
@@ -73,7 +82,15 @@
     .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.07)}
     .btn.primary{
       border: none;
-      background: linear-gradient(135deg, var(--accent), #5b46ff);
+      .btn.primary{
+  background: linear-gradient(135deg, #111111, #1a1a1a);
+  border:1px solid rgba(255,255,255,.15);
+}
+      .btn.primary:hover{
+  background: linear-gradient(135deg, #1a1a1a, #222222);
+}
+
+;
       box-shadow: 0 16px 40px rgba(124,92,255,.25);
     }
     .btn.primary:hover{filter:brightness(1.05)}
