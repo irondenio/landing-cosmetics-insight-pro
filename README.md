@@ -1,1 +1,1 @@
-# landing-cosmetics-insight-pro
+# landing-seahorse-insight-pro
